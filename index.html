@@ -3,19 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Kampadejo - Expériences de camping</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    
     <!-- Photos par Unsplash - https://unsplash.com/collections/315034/camping -->
     <!-- Icônes par Stephen Hutchings - Collection Typicons - Flaticon -->
 </head>
 
 <body>
     <!-- Lien Aller au contenu -->
-    <header class="entete">
+     <a href="#contenu" class="btn">Aller au contenu</a>
+    <header role="banner" class="entete">
         <div class="conteneur">
             <!-- Menu principal -->
-
+<nav role="navigation" class="nav nav_closed" id="nav-principal" aria-label="Navigation principale">
+    <!-- Bouton de contrôle du menu -->
+    <!-- <button class="nav__control">Menu</button> -->
+    <a href="index.html" class="logo"><img src=".//assets/images/logo.svg" alt=""></a>
+    <ul class="nav_list">
+        <li class="nav_list-item"><a href="#entreprise" class="nav_link">Entreprise</a></li>
+        <li class="nav_list-item"><a href="#experiences" class="nav_link">Expériences</a></li>
+        <li class="nav_list-item"><a href="#services" class="nav_link">Services</a></li>
+        <li class="nav_list-item"><a href="#contact" class="nav_link">Contact</a></li>
+    </ul>
+</nav>
 
         </div>
         <div class="conteneur accroche">
@@ -26,7 +39,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main role="main">
         <section class="entreprise conteneur rangee" id="entreprise">
             <div class="cols_7_de_12">
                 <h2 id="contenu">Notre entreprise</h2>
@@ -136,7 +149,7 @@
             </div>
         </section>
     </main>
-    <footer id="contact">
+    <footer id="contact" role="contentinfo">
         <div class="conteneur rangee">
             <div class="cols_4_de_12">
                 <h2>Nous joindre</h2>
@@ -154,21 +167,18 @@
                     <div class="cols_6_de_12">
                         <ul>
                             <li>
-                                <span>
-                                    <span class="">Courriel :</span>
-                                </span>
+                                <span class="screen-reader-only">Courriel :</span>
+                                <span class="icone icone--courriel"></span>
                                 <a href="mailto:pleinair@kampadejo.camp">pleinair@kampadejo.camp</a>
                             </li>
                             <li>
-                                <span>
-                                    <span class="">Téléphone :</span>
-                                </span>
+                                <span class="screen-reader-only">Téléphone :</span>
+                                <span class="icone icone--telephone"></span>
                                 <a href="tel:+14185555543">(418) 555-5543</a>
                             </li>
                             <li>
-                                <span>
-                                    <span class="">Facebook :</span>
-                                </span>
+                                <span class="screen-reader-only">Facebook :</span>
+                                <span class="icone icone--facebook"></span>
                                 <a href="http://www.facebook.com" target="_blank">Facebook</a>
                             </li>
                         </ul>
@@ -180,7 +190,7 @@
     </footer>
     
     <!-- Script pour le menu mobile -->
-    
+    <script src=".//assets/js/menu.js"></script>
     
 </body>
 
